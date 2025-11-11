@@ -1,0 +1,66 @@
+
+import { Ticket, TicketStatus, TicketPriority } from './types';
+
+export const initialTickets: Ticket[] = [
+  {
+    id: 1,
+    subject: 'Cannot login to my account',
+    description: 'I am trying to log in to my account, but it keeps saying "Invalid credentials". I have tried resetting my password, but I am not receiving the reset email. This is urgent as I need to access my files for a deadline.',
+    requester: 'Alice Johnson',
+    status: TicketStatus.Open,
+    priority: TicketPriority.Urgent,
+    createdAt: new Date(Date.now() - 2 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 10 * 60 * 1000),
+    summary: 'User is locked out of their account and unable to reset their password, blocking access to critical files.'
+  },
+  {
+    id: 2,
+    subject: 'Printer is not working',
+    description: 'The main office printer on the 3rd floor is not printing. It shows a "Paper Jam" error, but I have checked and there is no paper stuck inside. We need this fixed as soon as possible for printing reports.',
+    requester: 'Bob Williams',
+    status: TicketStatus.InProgress,
+    priority: TicketPriority.High,
+    createdAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 3 * 60 * 60 * 1000),
+  },
+  {
+    id: 3,
+    subject: 'Request for new software installation',
+    description: 'I would like to request the installation of Adobe Photoshop on my workstation. My manager has approved this request. Please let me know the process.',
+    requester: 'Charlie Brown',
+    status: TicketStatus.Open,
+    priority: TicketPriority.Medium,
+    createdAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 4,
+    subject: 'Slow computer performance',
+    description: 'My computer has been running very slowly for the past few days. It takes a long time to open applications and switch between windows. It is impacting my productivity.',
+    requester: 'Diana Prince',
+    status: TicketStatus.Resolved,
+    priority: TicketPriority.Medium,
+    createdAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 5,
+    subject: 'Question about email signature',
+    description: 'How can I update my email signature? I need to add my new phone number to it. Is there a guide I can follow?',
+    requester: 'Eve Adams',
+    status: TicketStatus.Resolved,
+    priority: TicketPriority.Low,
+    createdAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+  },
+  {
+    id: 6,
+    subject: 'VPN connection issues from home',
+    description: 'I\'m unable to connect to the company VPN from my home network. I keep getting a connection timeout error. It was working fine yesterday.',
+    requester: 'Frank Miller',
+    status: TicketStatus.InProgress,
+    priority: TicketPriority.High,
+    createdAt: new Date(Date.now() - 18 * 60 * 60 * 1000),
+    updatedAt: new Date(Date.now() - 1 * 60 * 60 * 1000),
+  },
+];

@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Gemini Helpdesk Dashboard",
+  "description": "An intelligent helpdesk ticketing system powered by the Gemini API. It features a dashboard for ticket overviews, ticket creation with AI-powered priority suggestion and summarization, and a comprehensive ticket management list.",
+  "requestFramePermissions": []
+}
